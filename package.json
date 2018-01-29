@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "graphql-request": "^1.4.1",
     "next": "^4.2.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"

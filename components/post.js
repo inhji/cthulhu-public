@@ -1,0 +1,20 @@
+import Link from 'next/link'
+
+export default ({ post }) => (
+  <article className="post h-entry">
+    <p className="p-name e-content">{post.content}</p>
+    <p className="meta">
+      <Link href={{ pathname: '/note', query: { id: post.id } }}>
+        <a>
+          <time className="dt-published time">{post.createdAt}</time>
+        </a>
+      </Link>
+    </p>
+
+    <style jsx>{`
+      p.meta {
+        color: #828282;
+      }
+    `}</style>
+  </article>
+)
