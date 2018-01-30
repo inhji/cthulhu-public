@@ -12,7 +12,7 @@ export default ({ post }) => (
     </p>
 
     <style jsx>{`
-      p.meta {
+      time {
         color: #828282;
       }
     `}</style>
