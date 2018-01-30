@@ -37,12 +37,13 @@ export default ({ children, title = 'Home' }) => (
         color: #d34;
       }
       a:hover {
-        color: #111111;
+        color: #111;
         text-decoration: underline;
       }
 
       .wrapper {
-        max-width: 800px;
+        padding: 0 30px;
+        max-width: calc(800px - (30px * 2));
         margin: 0 auto;
       }
 
