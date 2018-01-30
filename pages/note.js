@@ -1,1 +1,59 @@
-export default () => <div>This page should display a single post</div>
+import React from 'react'
+import { request } from 'graphql-request'
+import Layout from '../components/layout'
+import Post from '../components/post'
+
+const query = /* GraphQL */ `
+  query post($hashid: ID!) {
+    postByHashid(hashid: $hashid) {
+      ... on Note {
+        hashid
+        content
+        type
+        createdAt
+        author {
+          id
+        }
+      }
+
+      ... on Article {
+        hashid
+        title
+        content
+        createdAt
+        author {
+          id
+        }
+      }
+
+      ... on Bookmark {
+        hashid
+        url
+        createdAt
+        author {
+          id
+        }
+      }
+    }
+  }
+`
+
+class NotePage extends React.Component {
+  static async getInitialProps({ query: { hashid } }) {
+    console.log(hashid)
+    const { postByHashid } = await request('https://api.inhji.de/graphql', query, { hashid })
+    return { post: postByHashid }
+  }
+
+  render() {
+    const { post } = this.props
+
+    return (
+      <Layout>
+        <Post post={post} />
+      </Layout>
+    )
+  }
+}
+
+export default NotePage
