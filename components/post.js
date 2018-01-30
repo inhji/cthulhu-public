@@ -4,7 +4,10 @@ export default ({ post }) => (
   <article className="post h-entry">
     <p className="p-name e-content">{post.content}</p>
     <p className="meta">
-      <Link href={{ pathname: '/note', query: { id: post.id } }}>
+      <Link
+        href={{ pathname: '/note', query: { hashid: post.hashid } }}
+        as={`/note/${post.hashid}`}
+      >
         <a>
           <time className="dt-published time">{post.createdAt}</time>
         </a>
