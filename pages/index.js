@@ -2,7 +2,9 @@ import { request } from 'graphql-request'
 import Layout from '../components/layout'
 import Post from '../components/post'
 
-const Index = ({ posts }) => <Layout title="Home">{posts.map(post => <Post post={post} />)}</Layout>
+const Index = ({ posts }) => (
+  <Layout title="Home">{posts.map(post => <Post key={post.hashid} post={post} />)}</Layout>
+)
 
 const query = /* GraphQL */ `
   query posts {
