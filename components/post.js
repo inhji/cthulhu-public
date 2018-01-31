@@ -8,7 +8,7 @@ export default ({ post }) => (
         href={{ pathname: '/note', query: { hashid: post.hashid } }}
         as={`/note/${post.hashid}`}
       >
-        <a>
+        <a className="u-url">
           <time className="dt-published time">{post.createdAt}</time>
         </a>
       </Link>

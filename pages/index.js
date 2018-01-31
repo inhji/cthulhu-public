@@ -24,7 +24,6 @@ const query = /* GraphQL */ `
 
 Index.getInitialProps = async ({ req }) => {
   const { posts } = await request('https://api.inhji.de/graphql', query)
-  console.log(posts)
   return { posts }
 }
 
