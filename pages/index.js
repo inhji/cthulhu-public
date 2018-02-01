@@ -13,6 +13,7 @@ const query = /* GraphQL */ `
         id
         content
         hashid
+        tags
         createdAt
         author {
           name

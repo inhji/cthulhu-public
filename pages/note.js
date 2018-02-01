@@ -10,6 +10,7 @@ const query = /* GraphQL */ `
         hashid
         content
         type
+        tags
         createdAt
         author {
           id
