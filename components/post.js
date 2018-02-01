@@ -12,6 +12,7 @@ export default ({ post }) => (
           <time className="dt-published time">{post.createdAt}</time>
         </a>
       </Link>
+      <a u-author href="/" />
     </p>
 
     <style jsx>{`
