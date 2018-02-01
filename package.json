@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dateformat": "^3.0.2",
     "express": "^4.16.2",
     "graphql-request": "^1.4.1",
     "next": "^4.2.3",
