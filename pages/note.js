@@ -41,7 +41,6 @@ const query = /* GraphQL */ `
 
 class NotePage extends React.Component {
   static async getInitialProps({ query: { hashid } }) {
-    console.log(hashid)
     const { postByHashid } = await request('https://api.inhji.de/graphql', query, { hashid })
     return { post: postByHashid }
   }
