@@ -43,7 +43,7 @@ const Permalink = ({ date, hashid }) => (
   </span>
 )
 
-const Author = () => <a class="u-author" href="/" />
+const Author = () => <a class="p-author h-card" href="/" />
 
 export default ({ post }) => (
   <article className="post h-entry">
