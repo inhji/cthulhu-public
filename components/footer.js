@@ -29,6 +29,7 @@ export default () => (
 
       .bio a {
         color: #828282;
+        text-decoration: underline;
       }
     `}</style>
   </footer>
