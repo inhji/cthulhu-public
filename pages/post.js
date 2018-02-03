@@ -2,6 +2,7 @@ import React from 'react'
 import { request } from 'graphql-request'
 import Layout from '../components/layout'
 import Post from '../components/post'
+import Error from './_error'
 
 const query = /* GraphQL */ `
   query post($hashid: ID!) {
@@ -29,7 +30,11 @@ const query = /* GraphQL */ `
 
       ... on Bookmark {
         hashid
+        title
+        content
         url
+        tags
+        type
         createdAt
         author {
           id
@@ -39,7 +44,7 @@ const query = /* GraphQL */ `
   }
 `
 
-class NotePage extends React.Component {
+class PostPage extends React.Component {
   static async getInitialProps({ query: { hashid } }) {
     const { postByHashid } = await request('https://api.inhji.de/graphql', query, { hashid })
     return { post: postByHashid }
@@ -56,4 +61,4 @@ class NotePage extends React.Component {
   }
 }
 
-export default NotePage
+export default PostPage
