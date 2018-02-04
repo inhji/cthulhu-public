@@ -7,9 +7,7 @@ export default () => (
         <p>
           <span>Created in 2018 by </span>
           <Link href="https://inhji.de">
-            <a className="h-card" rel="author">
-              Jonathan Jenne
-            </a>
+            <a rel="author">Jonathan Jenne</a>
           </Link>
         </p>
       </div>

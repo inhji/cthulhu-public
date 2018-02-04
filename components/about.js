@@ -8,7 +8,7 @@ import {
 } from '@fortawesome/fontawesome-free-brands'
 
 const About = () => (
-  <aside className="about">
+  <aside className="about h-card">
     <div className="wrapper">
       <div className="flex">
         <img className="avatar u-photo" src="/static/me.jpeg" alt="Jonathan Jenne's Avatar" />
