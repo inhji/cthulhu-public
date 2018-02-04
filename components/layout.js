@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Footer from './footer'
 import Header from './header'
+import About from './about'
 
 function pageTitle(title) {
   const siteTitle = 'Inhji.de'
@@ -17,6 +18,7 @@ export default ({ children, title = 'Home' }) => (
     </Head>
 
     <Header />
+    <About />
 
     <main id="site-content">
       <div className="wrapper">{children}</div>
@@ -49,10 +51,6 @@ export default ({ children, title = 'Home' }) => (
 
       #site-content {
         padding: 30px 0;
-      }
-
-      .pull-right {
-        float: right;
       }
 
       /*!

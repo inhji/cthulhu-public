@@ -12,11 +12,6 @@ export default () => (
             </a>
           </Link>
         </p>
-        <p className="p-note bio">
-          I like <a href="https://github.com/inhji">programming</a>, exploring cities,{' '}
-          <a href="https://www.last.fm/user/inhji">music</a> and the{' '}
-          <a href="https://indieweb.org/">#indieweb</a>. Also, I want (to be) a cat.
-        </p>
       </div>
     </div>
 
