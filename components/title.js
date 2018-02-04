@@ -4,7 +4,7 @@ const Title = ({ title, url }) =>
   url ? (
     <h2 className="p-name">
       <Link href={url}>
-        <a>{title}</a>
+        <a className="u-bookmark-of h-cite">{title}</a>
       </Link>
     </h2>
   ) : (
