@@ -18,6 +18,7 @@ const About = () => (
             <span className="p-name">
               Jonathan<span style={{ display: 'none' }}> Jenne</span>
             </span>!
+            <a href="/" className="u-url u-uid" />
           </h2>
           <p className="p-note bio">
             I like programming, exploring cities, music and the #indieweb. Also, I want (to be) a
