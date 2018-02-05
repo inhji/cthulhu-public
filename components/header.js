@@ -5,7 +5,7 @@ export default () => (
     <div className="header">
       <div className="wrapper">
         <Link href="/">
-          <a className="site-title">Technos & Psyche</a>
+          <a className="site-title">Inhji.de</a>
         </Link>
 
         <nav className="site-nav">
