@@ -4,7 +4,7 @@ const About = () => (
   <aside className="about h-card">
     <div className="wrapper">
       <div className="flex">
-        <img className="avatar u-photo" src="/static/me.jpeg" alt="Jonathan Jenne's Avatar" />
+        <img className="avatar u-photo" src="/static/me.jpg" alt="Jonathan Jenne's Avatar" />
         <div className="description">
           <h2 className="greeting">
             Hi, I'm{' '}
@@ -14,8 +14,8 @@ const About = () => (
             <a href="/" className="u-url u-uid" />
           </h2>
           <p className="p-note bio">
-            I like programming, exploring cities, music and the #indieweb. Also, I want (to be) a
-            cat.
+            I like programming, exploring cities, music and the #indieweb. I write short-stories.
+            Also, I want to be a cat.
           </p>
         </div>
       </div>
@@ -35,23 +35,14 @@ const About = () => (
 
       .flex {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: no-wrap;
       }
 
       .avatar {
         width: 100px;
         height: 100px;
         border-radius: 5px;
-      }
-
-      @media (min-width: 64em) {
-        .flex {
-          flex-wrap: nowrap;
-        }
-
-        .avatar {
-          margin-right: 10px;
-        }
+        margin-right: 10px;
       }
     `}</style>
   </aside>
