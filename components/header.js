@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Nav from './nav'
 
 export default () => (
   <header>
@@ -8,15 +9,7 @@ export default () => (
           <a className="site-title">Inhji.de</a>
         </Link>
 
-        <nav className="site-nav">
-          <ul>
-            <li>
-              <Link href="/">
-                <a>About</a>
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <Nav />
       </div>
     </div>
 
@@ -34,20 +27,6 @@ export default () => (
         letter-spacing: -1px;
         margin-bottom: 0;
         float: left;
-      }
-
-      .site-nav {
-        float: right;
-      }
-
-      .site-nav li {
-        list-style-type: none;
-        float: right;
-        margin-left: 10px;
-      }
-
-      .site-nav li a {
-        line-height: 1.5;
       }
     `}</style>
   </header>
