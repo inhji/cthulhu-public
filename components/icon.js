@@ -1,6 +1,6 @@
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
-export default ({ icon, color, size = 'md' }) => (
+export default ({ icon, color, size = 'lg' }) => (
   <span className="icon">
     <FontAwesomeIcon icon={icon} size={size} />
 
