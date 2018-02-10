@@ -26,7 +26,7 @@ export default ({ children, title = 'Home' }) => (
 
     <Footer />
 
-    <style global jsx>{`
+    <style jsx global>{`
       body {
         margin: 0;
         padding: 0;
@@ -52,15 +52,12 @@ export default ({ children, title = 'Home' }) => (
       #site-content {
         padding: 30px 0;
       }
+    `}</style>
 
-      /*!
-       * Font Awesome Free 5.0.6 by @fontawesome - http://fontawesome.com
-       * License - http://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
-       */
+    <style jsx global>{`
       svg:not(:root).svg-inline--fa {
         overflow: visible;
       }
-
       .svg-inline--fa {
         display: inline-block;
         font-size: inherit;
@@ -148,7 +145,6 @@ export default ({ children, title = 'Home' }) => (
       .svg-inline--fa.fa-fw {
         width: 1.25em;
       }
-
       .fa-layers svg.svg-inline--fa {
         bottom: 0;
         left: 0;
@@ -157,7 +153,6 @@ export default ({ children, title = 'Home' }) => (
         right: 0;
         top: 0;
       }
-
       .fa-layers {
         display: inline-block;
         height: 1em;
@@ -170,14 +165,12 @@ export default ({ children, title = 'Home' }) => (
         -webkit-transform-origin: center center;
         transform-origin: center center;
       }
-
-      .fa-layers-text,
-      .fa-layers-counter {
+      .fa-layers-counter,
+      .fa-layers-text {
         display: inline-block;
         position: absolute;
         text-align: center;
       }
-
       .fa-layers-text {
         left: 50%;
         top: 50%;
@@ -186,7 +179,6 @@ export default ({ children, title = 'Home' }) => (
         -webkit-transform-origin: center center;
         transform-origin: center center;
       }
-
       .fa-layers-counter {
         background-color: #ff253a;
         border-radius: 1em;
@@ -205,7 +197,6 @@ export default ({ children, title = 'Home' }) => (
         -webkit-transform-origin: top right;
         transform-origin: top right;
       }
-
       .fa-layers-bottom-right {
         bottom: 0;
         right: 0;
@@ -215,7 +206,6 @@ export default ({ children, title = 'Home' }) => (
         -webkit-transform-origin: bottom right;
         transform-origin: bottom right;
       }
-
       .fa-layers-bottom-left {
         bottom: 0;
         left: 0;
@@ -226,7 +216,6 @@ export default ({ children, title = 'Home' }) => (
         -webkit-transform-origin: bottom left;
         transform-origin: bottom left;
       }
-
       .fa-layers-top-right {
         right: 0;
         top: 0;
@@ -235,7 +224,6 @@ export default ({ children, title = 'Home' }) => (
         -webkit-transform-origin: top right;
         transform-origin: top right;
       }
-
       .fa-layers-top-left {
         left: 0;
         right: auto;
@@ -245,66 +233,51 @@ export default ({ children, title = 'Home' }) => (
         -webkit-transform-origin: top left;
         transform-origin: top left;
       }
-
       .fa-lg {
         font-size: 1.33333em;
         line-height: 0.75em;
         vertical-align: -0.0667em;
       }
-
       .fa-xs {
         font-size: 0.75em;
       }
-
       .fa-sm {
         font-size: 0.875em;
       }
-
       .fa-1x {
         font-size: 1em;
       }
-
       .fa-2x {
         font-size: 2em;
       }
-
       .fa-3x {
         font-size: 3em;
       }
-
       .fa-4x {
         font-size: 4em;
       }
-
       .fa-5x {
         font-size: 5em;
       }
-
       .fa-6x {
         font-size: 6em;
       }
-
       .fa-7x {
         font-size: 7em;
       }
-
       .fa-8x {
         font-size: 8em;
       }
-
       .fa-9x {
         font-size: 9em;
       }
-
       .fa-10x {
         font-size: 10em;
       }
-
       .fa-fw {
         text-align: center;
         width: 1.25em;
       }
-
       .fa-ul {
         list-style-type: none;
         margin-left: 2.5em;
@@ -313,7 +286,6 @@ export default ({ children, title = 'Home' }) => (
       .fa-ul > li {
         position: relative;
       }
-
       .fa-li {
         left: -2em;
         position: absolute;
@@ -321,47 +293,39 @@ export default ({ children, title = 'Home' }) => (
         width: 2em;
         line-height: inherit;
       }
-
       .fa-border {
         border: solid 0.08em #eee;
         border-radius: 0.1em;
         padding: 0.2em 0.25em 0.15em;
       }
-
       .fa-pull-left {
         float: left;
       }
-
       .fa-pull-right {
         float: right;
       }
-
       .fa.fa-pull-left,
-      .fas.fa-pull-left,
-      .far.fa-pull-left,
+      .fab.fa-pull-left,
       .fal.fa-pull-left,
-      .fab.fa-pull-left {
+      .far.fa-pull-left,
+      .fas.fa-pull-left {
         margin-right: 0.3em;
       }
-
       .fa.fa-pull-right,
-      .fas.fa-pull-right,
-      .far.fa-pull-right,
+      .fab.fa-pull-right,
       .fal.fa-pull-right,
-      .fab.fa-pull-right {
+      .far.fa-pull-right,
+      .fas.fa-pull-right {
         margin-left: 0.3em;
       }
-
       .fa-spin {
         -webkit-animation: fa-spin 2s infinite linear;
         animation: fa-spin 2s infinite linear;
       }
-
       .fa-pulse {
         -webkit-animation: fa-spin 1s infinite steps(8);
         animation: fa-spin 1s infinite steps(8);
       }
-
       @-webkit-keyframes fa-spin {
         0% {
           -webkit-transform: rotate(0deg);
@@ -372,7 +336,6 @@ export default ({ children, title = 'Home' }) => (
           transform: rotate(360deg);
         }
       }
-
       @keyframes fa-spin {
         0% {
           -webkit-transform: rotate(0deg);
@@ -383,59 +346,50 @@ export default ({ children, title = 'Home' }) => (
           transform: rotate(360deg);
         }
       }
-
       .fa-rotate-90 {
         -ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=1)';
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
       }
-
       .fa-rotate-180 {
         -ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=2)';
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
       }
-
       .fa-rotate-270 {
         -ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=3)';
         -webkit-transform: rotate(270deg);
         transform: rotate(270deg);
       }
-
       .fa-flip-horizontal {
         -ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)';
         -webkit-transform: scale(-1, 1);
         transform: scale(-1, 1);
       }
-
       .fa-flip-vertical {
         -ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)';
         -webkit-transform: scale(1, -1);
         transform: scale(1, -1);
       }
-
       .fa-flip-horizontal.fa-flip-vertical {
         -ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)';
         -webkit-transform: scale(-1, -1);
         transform: scale(-1, -1);
       }
-
-      :root .fa-rotate-90,
+      :root .fa-flip-horizontal,
+      :root .fa-flip-vertical,
       :root .fa-rotate-180,
       :root .fa-rotate-270,
-      :root .fa-flip-horizontal,
-      :root .fa-flip-vertical {
+      :root .fa-rotate-90 {
         -webkit-filter: none;
         filter: none;
       }
-
       .fa-stack {
         display: inline-block;
         height: 2em;
         position: relative;
         width: 2em;
       }
-
       .fa-stack-1x,
       .fa-stack-2x {
         bottom: 0;
@@ -445,21 +399,17 @@ export default ({ children, title = 'Home' }) => (
         right: 0;
         top: 0;
       }
-
       .svg-inline--fa.fa-stack-1x {
         height: 1em;
         width: 1em;
       }
-
       .svg-inline--fa.fa-stack-2x {
         height: 2em;
         width: 2em;
       }
-
       .fa-inverse {
         color: #fff;
       }
-
       .sr-only {
         border: 0;
         clip: rect(0, 0, 0, 0);
@@ -470,7 +420,6 @@ export default ({ children, title = 'Home' }) => (
         position: absolute;
         width: 1px;
       }
-
       .sr-only-focusable:active,
       .sr-only-focusable:focus {
         clip: auto;
