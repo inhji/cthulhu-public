@@ -8,7 +8,7 @@ import { faBook } from '@fortawesome/fontawesome-free-solid'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
 const Header = ({ tracks: [mostRecentTrack, ...rest] }) => (
-  <div>
+  <div className="h-card">
     <div className="row">
       <div className="avatar small">
         <img
@@ -18,10 +18,10 @@ const Header = ({ tracks: [mostRecentTrack, ...rest] }) => (
         />
       </div>
       <div className="about">
-        <h2>
+        <h1>
           <span className="p-name">Jonathan Jenne</span>
           <a href="/" rel="author" className="u-url u-uid" />
-        </h2>
+        </h1>
         <div className="p-note tags">
           {[
             'achtsamkeit',
@@ -98,7 +98,7 @@ const Header = ({ tracks: [mostRecentTrack, ...rest] }) => (
         border-radius: 5px;
       }
 
-      .about h2 {
+      .about h1 {
         font-weight: 100;
         font-size: 2rem;
         margin-top: 0;
