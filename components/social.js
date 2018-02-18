@@ -1,38 +1,47 @@
-import Icon from './icon'
 import {
   faBandcamp,
   faGithub,
   faSteam,
-  faLastfm,
-  faGetPocket
+  faLastfmSquare
 } from '@fortawesome/fontawesome-free-brands'
 import { faBook } from '@fortawesome/fontawesome-free-solid'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
 export default () => (
   <div className="social">
-    <a href="https://bandcamp.com/inhji" rel="me">
-      <Icon icon={faBandcamp} color="#629aa9" />Bandcamp
+    <a href="https://bandcamp.com/inhji" rel="me" title="Jonathan bei Bandcamp">
+      <FontAwesomeIcon size="lg" icon={faBandcamp} />
     </a>
-    <a href="https://github.com/inhji" rel="me">
-      <Icon icon={faGithub} color="#333" />Github
+    <a href="https://github.com/inhji" rel="me" title="Jonathan bei Github">
+      <FontAwesomeIcon size="lg" icon={faGithub} />
     </a>
-    <a href="https://steamcommunity.com/id/s4itama" rel="me">
-      <Icon icon={faSteam} color="#000000" />Steam
+    <a
+      href="https://steamcommunity.com/id/s4itama"
+      rel="me"
+      title="Jonathan bei Steam"
+    >
+      <FontAwesomeIcon size="lg" icon={faSteam} />
     </a>
-    <a href="https://www.last.fm/user/inhji" rel="me">
-      <Icon icon={faLastfm} color="#d51007" />Last.fm
+    <a
+      href="https://www.last.fm/user/inhji"
+      rel="me"
+      title="Jonathan bei Last.fm"
+    >
+      <FontAwesomeIcon size="lg" icon={faLastfmSquare} />
     </a>
-    <a href="https://blog.inhji.de" rel="me">
-      <Icon icon={faBook} color="#212425" />Blog
+    <a href="https://blog.inhji.de" rel="me" title="Jonathans Blog">
+      <FontAwesomeIcon size="lg" icon={faBook} />
     </a>
 
     <style jsx>{`
       .social {
         margin-top: 20px;
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
       }
 
       .social a {
-        padding-right: 5px;
         color: #000;
       }
     `}</style>

@@ -1,17 +1,17 @@
-import { request } from 'graphql-request'
 import Layout from '../components/layout'
-import Post from '../components/post'
 import query from '../queries/index'
+import { execQuery } from '../lib/graphql'
 
-const Index = ({ posts }) => (
+const Index = ({ posts, blogPosts }) => (
   <Layout title="Home">
-    {posts.map(post => <Post key={post.hashid} post={post} />)}
+    {/* <strong>Neuste Geschichte: </strong>
+    <span>{blogPosts.filter(p => p.featured)[0].title}</span> */}
   </Layout>
 )
 
 Index.getInitialProps = async ({ req }) => {
-  const { posts } = await request('https://api.inhji.de/graphql', query)
-  return { posts }
+  const { posts, blogPosts } = await execQuery(query)
+  return { posts, blogPosts }
 }
 
 export default Index

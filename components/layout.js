@@ -1,45 +1,43 @@
 import Head from 'next/head'
-import Footer from './footer'
-import Header from './header'
-import About from './about'
 
-function pageTitle(title) {
+function pageTitle (title) {
   const siteTitle = 'Inhji.de'
   return [title, siteTitle].join(' - ')
 }
 
-export default ({ children, title = 'Home' }) => (
+export default ({ children, title = 'Home', tracks }) => (
   <div>
     <Head>
       <title>{pageTitle(title)}</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link rel="me" href="https://github.com/inhji" />
     </Head>
-
-    <Header />
-    <About />
 
     <main id="site-content">
       <div className="wrapper">{children}</div>
     </main>
 
-    <Footer />
+    {/* <Footer /> */}
 
     <style jsx global>{`
       body {
         margin: 0;
         padding: 0;
-        font-size: 16px;
-        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.1rem;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: 'Playfair Display', serif;
       }
 
       a {
         text-decoration: none;
-        color: #d34;
+        color: #000;
       }
+
       a:hover {
-        color: #111;
+        color: #000;
         text-decoration: underline;
       }
 
@@ -47,6 +45,10 @@ export default ({ children, title = 'Home' }) => (
         padding: 0 30px;
         max-width: calc(800px - (30px * 2));
         margin: 0 auto;
+      }
+
+      #site-header {
+        margin-top: 5rem;
       }
 
       #site-content {

@@ -1,5 +1,11 @@
 export default /* GraphQL */ `
   query posts {
+    blogPosts {
+      featured
+      title
+      createdAt
+    }
+
     posts {
       ... on Note {
         id

@@ -1,22 +1,31 @@
 import Social from './social'
 
+const Greeting = () => (
+  <h2>
+    <span className="p-name">Jonathan Jenne</span>
+    <a href="/" rel="author" className="u-url u-uid" />
+    <style jsx>{`
+      h2 {
+        margin: 0;
+        font-family: 'Playfair Display', serif;
+        font-weight: 100;
+        font-size: 35px;
+      }
+    `}</style>
+  </h2>
+)
+
 const About = () => (
   <aside className="about h-card">
     <div className="wrapper">
       <div className="flex">
-        <img className="avatar u-photo" src="/static/me.jpg" alt="Jonathan Jenne's Avatar" />
+        <img
+          className="avatar u-photo"
+          src="/static/heidelberg-2017.png"
+          alt="Jonathan Jenne's Avatar"
+        />
         <div className="description">
-          <h2 className="greeting">
-            Hi, I'm{' '}
-            <span className="p-name">
-              Jonathan<span style={{ display: 'none' }}> Jenne</span>
-            </span>!
-            <a href="/" className="u-url u-uid" />
-          </h2>
-          <p className="p-note bio">
-            I like programming, exploring cities, music and the #indieweb. I write short-stories.
-            Also, I want to be a cat.
-          </p>
+          <Greeting />
         </div>
       </div>
       <Social />
@@ -29,20 +38,27 @@ const About = () => (
         overflow: auto;
       }
 
-      h2.greeting {
-        margin-top: 0;
-      }
-
       .flex {
         display: flex;
         flex-wrap: no-wrap;
       }
 
       .avatar {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         border-radius: 5px;
         margin-right: 10px;
+      }
+
+      .tag {
+        display: inline-block;
+        margin-right: 5px;
+        color: #333;
+        font-size: 1.1rem;
+      }
+
+      .tag .hash {
+        color: #888;
       }
     `}</style>
   </aside>

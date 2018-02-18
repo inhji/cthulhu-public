@@ -6,7 +6,7 @@ export default () => (
       <div className="wrapper">
         <p>
           <span>Created in 2018 by </span>
-          <Link href="https://inhji.de">
+          <Link href="/">
             <a rel="author">Jonathan Jenne</a>
           </Link>
         </p>
