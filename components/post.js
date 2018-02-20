@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Note from './note'
 import Bookmark from './bookmark'
 

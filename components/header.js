@@ -1,9 +1,4 @@
-import {
-  faBandcamp,
-  faGithub,
-  faSteam,
-  faLastfmSquare
-} from '@fortawesome/fontawesome-free-brands'
+import { faBandcamp, faGithub, faSteam, faLastfmSquare } from '@fortawesome/fontawesome-free-brands'
 import { faBook } from '@fortawesome/fontawesome-free-solid'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
@@ -11,16 +6,13 @@ const Header = ({ tracks: [mostRecentTrack, ...rest] }) => (
   <div className="h-card">
     <div className="row">
       <div className="avatar small">
-        <img
-          className="u-photo"
-          src="/static/heidelberg-2017.png"
-          alt="Jonathan Jenne's Avatar"
-        />
+        <img className="u-photo" src="/static/heidelberg-2017.png" alt="Jonathan Jenne's Avatar" />
       </div>
       <div className="about">
         <h1>
-          <span className="p-name">Jonathan Jenne</span>
-          <a href="/" rel="author" className="u-url u-uid" />
+          <a href="/" rel="author" className="u-url u-uid p-name">
+            Jonathan Jenne
+          </a>
         </h1>
         <div className="p-note tags">
           {[
@@ -51,28 +43,16 @@ const Header = ({ tracks: [mostRecentTrack, ...rest] }) => (
     </div>
     <div className="row">
       <div className="social-links small">
-        <a
-          href="https://bandcamp.com/inhji"
-          rel="me"
-          title="Jonathan bei Bandcamp"
-        >
+        <a href="https://bandcamp.com/inhji" rel="me" title="Jonathan bei Bandcamp">
           <FontAwesomeIcon size="lg" icon={faBandcamp} />
         </a>
         <a href="https://github.com/inhji" rel="me" title="Jonathan bei Github">
           <FontAwesomeIcon size="lg" icon={faGithub} />
         </a>
-        <a
-          href="https://steamcommunity.com/id/s4itama"
-          rel="me"
-          title="Jonathan bei Steam"
-        >
+        <a href="https://steamcommunity.com/id/s4itama" rel="me" title="Jonathan bei Steam">
           <FontAwesomeIcon size="lg" icon={faSteam} />
         </a>
-        <a
-          href="https://www.last.fm/user/inhji"
-          rel="me"
-          title="Jonathan bei Last.fm"
-        >
+        <a href="https://www.last.fm/user/inhji" rel="me" title="Jonathan bei Last.fm">
           <FontAwesomeIcon size="lg" icon={faLastfmSquare} />
         </a>
         <a href="https://blog.inhji.de" rel="me" title="Jonathans Blog">
