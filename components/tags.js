@@ -12,6 +12,10 @@ const Tags = ({ tags }) => (
     ))}
 
     <style jsx>{`
+      .tags {
+        float: right;
+      }
+
       .hash,
       .tag {
         color: #828282;

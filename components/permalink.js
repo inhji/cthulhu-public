@@ -13,8 +13,6 @@ const Permalink = ({ date, hashid, type }) => (
 
     <style jsx>{`
       .permalink {
-        margin-right: 5px;
-        float: right;
       }
 
       time {
