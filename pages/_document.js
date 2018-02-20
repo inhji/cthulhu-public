@@ -17,28 +17,20 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link rel="me" href="https://github.com/inhji" />
-          <link
-            rel="authorization_endpoint"
-            href="https://indieauth.com/auth"
-          />
-          <link
-            rel="token_endpoint"
-            href="https://tokens.indieauth.com/token"
-          />
+
+          <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+          <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+
           <link rel="micropub" href="https://api.inhji.de/micropub" />
+
+          <link rel="pingback" href="https://webmention.io/inhji.de/xmlrpc" />
+          <link rel="webmention" href="https://webmention.io/inhji.de/webmention" />
+
           <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display"
             rel="stylesheet"
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `__TRACKS__ = ${JSON.stringify(this.props.tracks)}`
-            }}
           />
         </Head>
         <body>
