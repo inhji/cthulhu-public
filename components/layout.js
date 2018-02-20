@@ -11,6 +11,10 @@ export default ({ children, title = 'Home', tracks }) => (
       <title>{pageTitle(title)}</title>
     </Head>
 
+    <div className="wrapper">
+      <div className="line" />
+    </div>
+
     <main id="site-content">
       <div className="wrapper">{children}</div>
     </main>
@@ -29,6 +33,7 @@ export default ({ children, title = 'Home', tracks }) => (
       h2,
       h3 {
         font-family: 'Playfair Display', serif;
+        font-weight: 300;
       }
 
       a {
@@ -47,12 +52,17 @@ export default ({ children, title = 'Home', tracks }) => (
         margin: 0 auto;
       }
 
+      .line {
+        height: 0;
+        border-top: solid 1px #ccc;
+        margin: 40px 0;
+      }
+
       #site-header {
         margin-top: 5rem;
       }
 
       #site-content {
-        padding: 30px 0;
       }
     `}</style>
 
