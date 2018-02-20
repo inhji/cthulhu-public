@@ -1,17 +1,17 @@
 import Layout from '../components/layout'
 import query from '../queries/index'
 import { execQuery } from '../lib/graphql'
+import Post from '../components/post'
 
-const Index = ({ posts, blogPosts }) => (
+const Index = ({ posts }) => (
   <Layout title="Home">
-    {/* <strong>Neuste Geschichte: </strong>
-    <span>{blogPosts.filter(p => p.featured)[0].title}</span> */}
+    <div className="posts">{posts.map(post => <Post post={post} />)}</div>
   </Layout>
 )
 
 Index.getInitialProps = async ({ req }) => {
-  const { posts, blogPosts } = await execQuery(query)
-  return { posts, blogPosts }
+  const { posts } = await execQuery(query)
+  return { posts }
 }
 
 export default Index

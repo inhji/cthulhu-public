@@ -2,7 +2,6 @@ import React from 'react'
 import { request } from 'graphql-request'
 import Layout from '../components/layout'
 import Post from '../components/post'
-import Error from './_error'
 
 const query = /* GraphQL */ `
   query post($hashid: ID!) {
@@ -45,12 +44,12 @@ const query = /* GraphQL */ `
 `
 
 class PostPage extends React.Component {
-  static async getInitialProps({ query: { hashid } }) {
+  static async getInitialProps ({ query: { hashid } }) {
     const { postByHashid } = await request('https://api.inhji.de/graphql', query, { hashid })
     return { post: postByHashid }
   }
 
-  render() {
+  render () {
     const { post } = this.props
 
     return (

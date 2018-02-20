@@ -1,11 +1,5 @@
 export default /* GraphQL */ `
-  query posts {
-    blogPosts {
-      featured
-      title
-      createdAt
-    }
-
+  query IndexQuery {
     posts {
       ... on Note {
         id
