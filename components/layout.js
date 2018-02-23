@@ -1,18 +1,27 @@
 import Head from 'next/head'
+import Header from './header'
+import Nav from './nav'
 
 function pageTitle (title) {
   const siteTitle = 'Inhji.de'
   return [title, siteTitle].join(' - ')
 }
 
-export default ({ children, title = 'Home', tracks }) => (
+export default ({ children, title = 'Home', tracks = [] }) => (
   <div>
     <Head>
       <title>{pageTitle(title)}</title>
     </Head>
 
     <div className="wrapper">
-      <div className="line" />
+      {tracks.length > 0 ? (
+        <div>
+          <Header tracks={tracks} />
+          <div className="line" />
+        </div>
+      ) : (
+        <Nav />
+      )}
     </div>
 
     <main id="site-content">
@@ -46,6 +55,11 @@ export default ({ children, title = 'Home', tracks }) => (
         text-decoration: underline;
       }
 
+      .row {
+        display: flex;
+        margin-bottom: 5px;
+      }
+
       .wrapper {
         padding: 0 30px;
         max-width: calc(800px - (30px * 2));
@@ -63,6 +77,10 @@ export default ({ children, title = 'Home', tracks }) => (
       }
 
       #site-content {
+      }
+
+      .clear {
+        clear: both;
       }
     `}</style>
 
