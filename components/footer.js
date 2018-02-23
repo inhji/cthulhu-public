@@ -3,24 +3,21 @@ import Link from 'next/link'
 export default () => (
   <footer>
     <div className="footer">
-      <div className="wrapper">
-        <p>
-          <span>Created in 2018 by </span>
-          <Link href="/">
-            <a rel="author">Jonathan Jenne</a>
-          </Link>
-        </p>
-      </div>
+      <p>
+        <span>&copy; 2018 </span>
+        <Link href="/">
+          <a rel="author">Jonathan Jenne</a>
+        </Link>
+      </p>
     </div>
 
     <style jsx>{`
       .footer {
         color: #828282;
-        padding: 30px 0;
-        border-top: 1px solid #e8e8e8;
+        padding-bottom: 30px;
       }
 
-      .bio a {
+      .a {
         color: #828282;
         text-decoration: underline;
       }

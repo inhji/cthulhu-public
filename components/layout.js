@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from './header'
 import Nav from './nav'
+import Footer from './footer'
 
 function pageTitle (title) {
   const siteTitle = 'Inhji.de'
@@ -17,18 +18,23 @@ export default ({ children, title = 'Home', tracks = [] }) => (
       {tracks.length > 0 ? (
         <div>
           <Header tracks={tracks} />
-          <div className="line" />
         </div>
       ) : (
         <Nav />
       )}
     </div>
 
+    <div className="line" />
+
     <main id="site-content">
       <div className="wrapper">{children}</div>
     </main>
 
-    {/* <Footer /> */}
+    <div className="line" />
+
+    <div className="wrapper">
+      <Footer />
+    </div>
 
     <style jsx global>{`
       body {
@@ -68,7 +74,7 @@ export default ({ children, title = 'Home', tracks = [] }) => (
 
       .line {
         height: 0;
-        border-top: solid 1px #ccc;
+        border-top: solid 1px #e8e8e8;
         margin: 40px 0;
       }
 
