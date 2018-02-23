@@ -72,7 +72,7 @@ const AboutTags = () => (
 )
 
 const Header = ({ tracks: [mostRecentTrack, ...rest] }) => (
-  <div className="h-card">
+  <header className="h-card">
     <div className="row">
       <Nav />
     </div>
@@ -105,6 +105,12 @@ const Header = ({ tracks: [mostRecentTrack, ...rest] }) => (
     </div>
 
     <style>{`
+      @media all and (max-width: 699px) {
+        .row {
+          flex-wrap: wrap;
+        }
+      }
+
       .small, .avatar img {
         width: 150px;
         margin-right: 10px;
@@ -118,7 +124,7 @@ const Header = ({ tracks: [mostRecentTrack, ...rest] }) => (
         margin-bottom: 10px;
       }
     `}</style>
-  </div>
+  </header>
 )
 
 export default Header
