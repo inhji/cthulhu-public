@@ -14,7 +14,7 @@ class PostPage extends React.Component {
     const { post } = this.props
 
     return (
-      <Layout>
+      <Layout title="Post">
         <div className="post-wrapper">
           <div className="avatar">
             <img
