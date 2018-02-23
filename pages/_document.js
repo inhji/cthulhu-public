@@ -1,15 +1,11 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import flush from 'styled-jsx/server'
-import query from '../queries/header'
-import Header from '../components/header'
-import { execQuery } from '../lib/graphql'
 
 export default class MyDocument extends Document {
   static async getInitialProps ({ renderPage }) {
     const { html, head, errorHtml, chunks } = renderPage()
     const styles = flush()
-    const { tracks } = await execQuery(query)
-    return { html, head, errorHtml, chunks, styles, tracks }
+    return { html, head, errorHtml, chunks, styles }
   }
 
   render () {
@@ -34,11 +30,6 @@ export default class MyDocument extends Document {
           />
         </Head>
         <body>
-          <header id="site-header">
-            <div className="wrapper">
-              <Header tracks={this.props.tracks} />
-            </div>
-          </header>
           <Main />
           <NextScript />
         </body>
