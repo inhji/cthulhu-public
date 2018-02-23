@@ -15,7 +15,7 @@ class PostPage extends React.Component {
 
     return (
       <Layout title="Post">
-        <div className="post-wrapper">
+        <div>
           <div className="avatar">
             <img
               className="u-photo"
@@ -26,14 +26,11 @@ class PostPage extends React.Component {
           <Post post={post} />
         </div>
         <style jsx>{`
-          .post-wrapper {
-            // margin-top: 5rem;
-          }
-
           .avatar {
             float: left;
           }
           .avatar img {
+            border-radius: 5px;
             width: 75px;
             margin-right: 20px;
           }
