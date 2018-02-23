@@ -1,33 +1,34 @@
 import Link from 'next/link'
 
 const Nav = () => (
-  <nav className="site-nav">
-    <ul>
+  <nav>
+    <ul className="site-nav">
       <li>
         <Link href="/">
-          <a>About</a>
+          <a>
+            <strong>Inhji.de</strong>
+          </a>
         </Link>
       </li>
       <li>
         <Link href="/stories">
-          <a>Stories</a>
+          <a>Geschichten</a>
         </Link>
       </li>
     </ul>
+    <div className="clear" />
 
     <style jsx>{`
-      .site-nav {
-        float: right;
-      }
-
-      .site-nav li {
+      ul {
         list-style-type: none;
-        float: right;
-        margin-left: 10px;
+        margin-left: 0;
+        padding-left: 0;
+        height: 30px;
       }
 
-      .site-nav li a {
-        line-height: 1.5;
+      li {
+        float: left;
+        margin-right: 10px;
       }
     `}</style>
   </nav>
