@@ -1,5 +1,10 @@
 export default /* GraphQL */ `
   query IndexQuery {
+    tracks {
+      artist
+      track
+    }
+
     posts {
       ... on Note {
         id
