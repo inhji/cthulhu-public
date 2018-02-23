@@ -1,51 +1,12 @@
 import React from 'react'
-import { request } from 'graphql-request'
 import Layout from '../components/layout'
 import Post from '../components/post'
-
-const query = /* GraphQL */ `
-  query post($hashid: ID!) {
-    postByHashid(hashid: $hashid) {
-      ... on Note {
-        hashid
-        content
-        type
-        tags
-        createdAt
-        author {
-          id
-        }
-      }
-
-      ... on Article {
-        hashid
-        title
-        content
-        createdAt
-        author {
-          id
-        }
-      }
-
-      ... on Bookmark {
-        hashid
-        title
-        content
-        url
-        tags
-        type
-        createdAt
-        author {
-          id
-        }
-      }
-    }
-  }
-`
+import query from '../queries/post'
+import { execQuery } from '../lib/graphql'
 
 class PostPage extends React.Component {
   static async getInitialProps ({ query: { hashid } }) {
-    const { postByHashid } = await request('https://api.inhji.de/graphql', query, { hashid })
+    const { postByHashid } = await execQuery(query, { hashid })
     return { post: postByHashid }
   }
 
@@ -54,7 +15,29 @@ class PostPage extends React.Component {
 
     return (
       <Layout>
-        <Post post={post} />
+        <div className="post-wrapper">
+          <div className="avatar">
+            <img
+              className="u-photo"
+              src="/static/heidelberg-2017.png"
+              alt="Jonathan Jenne's Avatar"
+            />
+          </div>
+          <Post post={post} />
+        </div>
+        <style jsx>{`
+          .post-wrapper {
+            // margin-top: 5rem;
+          }
+
+          .avatar {
+            float: left;
+          }
+          .avatar img {
+            width: 75px;
+            margin-right: 20px;
+          }
+        `}</style>
       </Layout>
     )
   }
