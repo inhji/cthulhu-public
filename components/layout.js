@@ -42,6 +42,7 @@ export default ({ children, title = 'Home', tracks = [] }) => (
         padding: 0;
         font-size: 1.1rem;
         font-family: 'Open Sans', sans-serif;
+        overflow-y: scroll;
       }
 
       h1,
