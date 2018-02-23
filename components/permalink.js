@@ -6,7 +6,7 @@ const Permalink = ({ date, hashid, type }) => (
     <Link href={{ pathname: `/post`, query: { hashid } }} as={`/${type.toLowerCase()}/${hashid}`}>
       <a className="u-url">
         <time className="dt-published time" dateTime={date}>
-          {dateformat(date)}
+          {dateformat(date, 'd.mm.yyyy')}
         </time>
       </a>
     </Link>
