@@ -6,7 +6,7 @@ import Post from '../components/post'
 const Index = ({ posts, tracks }) => (
   <Layout tracks={tracks}>
     <data className="p-name" value="" />
-    <div className="posts h-feed">{posts.map(post => <Post post={post} />)}</div>
+    <div className="posts">{posts.map(post => <Post post={post} />)}</div>
   </Layout>
 )
 
