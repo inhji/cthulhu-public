@@ -15,7 +15,7 @@ class PostPage extends React.Component {
 
     return (
       <Layout title="Post">
-        <div>
+        <div className="h-entry">
           <div className="avatar">
             <img
               className="u-photo"
