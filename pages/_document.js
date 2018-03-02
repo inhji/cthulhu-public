@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="h-feed">
+        <body className="h-feed h-card">
           <Main />
           <NextScript />
         </body>

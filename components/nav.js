@@ -5,7 +5,7 @@ const Nav = () => (
     <ul className="site-nav">
       <li>
         <Link href="/">
-          <a>
+          <a className="u-url u-uid">
             <strong>Inhji.de</strong>
           </a>
         </Link>
