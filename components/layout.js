@@ -42,6 +42,7 @@ export default ({ children, title = 'Home', tracks = [] }) => (
         padding: 0;
         font-size: 1.1rem;
         font-family: 'Open Sans', sans-serif;
+        line-height: 1.7rem;
         overflow-y: scroll;
       }
 
@@ -84,6 +85,10 @@ export default ({ children, title = 'Home', tracks = [] }) => (
       }
 
       #site-content {
+      }
+
+      .emoji {
+        height: 1.3rem;
       }
 
       .clear {
