@@ -13,8 +13,6 @@ const postHandler = (req, res) => {
   return app.render(req, res, '/post', { hashid: req.params.hashid })
 }
 
-console.log(__dirname)
-
 app.prepare().then(() => {
   const server = express()
 
