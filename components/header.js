@@ -54,6 +54,7 @@ const AboutTags = () => (
         <span className="tag" key={t}>
           <span className="hash">#</span>
           {t}
+          <span>&nbsp;</span>
         </span>
       ))}
     </div>
