@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.7rem;
+  overflow-y: scroll;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.wrapper {
+  padding: 0 30px;
+  max-width: calc(800px - (30px * 2));
+  margin: 0 auto;
+}
+
+.line {
+  height: 0;
+  border-top: solid 1px #e8e8e8;
+  margin: 40px 0;
+}
+
+#site-header {
+  margin-top: 5rem;
+}
+
+#site-content {
+}
+
+.emoji {
+  height: 1.3rem;
+}
+
+.clear {
+  clear: both;
+}

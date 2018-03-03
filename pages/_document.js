@@ -24,6 +24,7 @@ export default class MyDocument extends Document {
           <link rel="pingback" href="https://webmention.io/inhji.de/xmlrpc" />
           <link rel="webmention" href="https://webmention.io/inhji.de/webmention" />
 
+          <link rel="stylesheet" href="/_next/static/style.css" />
           <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display"
             rel="stylesheet"
