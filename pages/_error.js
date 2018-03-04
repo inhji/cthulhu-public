@@ -2,17 +2,22 @@ import React from 'react'
 import Layout from '../components/layout'
 
 export default class Error extends React.Component {
-  static getInitialProps({ res, err }) {
+  static getInitialProps ({ res, err }) {
     const statusCode = res ? res.statusCode : err ? err.statusCode : null
     return { statusCode }
   }
 
-  render() {
+  render () {
+    const statusCode = this.props.statusCode ? this.props.statusCode : -1
+
     return (
       <Layout>
-        {this.props.statusCode
-          ? `An error ${this.props.statusCode} occurred on server`
-          : 'An error occurred on client'}
+        <div>
+          <h1>..the fuck?!</h1>
+        </div>
+
+        {statusCode === 404 && <p>Diese Seite gibt es garnicht 😅</p>}
+        {statusCode === 500 && <p>Alles ist kaputt! 😭</p>}
       </Layout>
     )
   }
