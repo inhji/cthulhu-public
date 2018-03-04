@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import timeago from '../lib/timeago'
+import timeago from '../../lib/timeago'
 
 const Permalink = ({ date, hashid, type }) => (
   <span className="permalink">

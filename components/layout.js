@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from './header'
-import Nav from './nav'
+import Nav from './header/nav'
 import Footer from './footer'
 import '../styles/style.scss'
 
