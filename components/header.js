@@ -2,6 +2,7 @@ import { faBandcamp, faGithub, faSteam, faLastfmSquare } from '@fortawesome/font
 import { faBook } from '@fortawesome/fontawesome-free-solid'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import Nav from './nav'
+import timeago from '../lib/timeago'
 
 const SocialLinks = () => (
   <div className="social-links">
@@ -94,9 +95,13 @@ const Header = ({ tracks: [mostRecentTrack, ...rest] }) => (
       </div>
       {mostRecentTrack && (
         <div className="listening-to">
-          Hört gerade: <em>{mostRecentTrack.track}</em>
+          Zuletzt gehört: <em>{mostRecentTrack.track}</em>
           <span> von </span>
           <em>{mostRecentTrack.artist}</em>
+          <time dateTime={mostRecentTrack.listenedAt} title={mostRecentTrack.listenedAt}>
+            {' '}
+            {timeago(mostRecentTrack.listenedAt)}
+          </time>
         </div>
       )}
     </div>

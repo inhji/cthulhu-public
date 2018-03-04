@@ -3,6 +3,7 @@ export default /* GraphQL */ `
     tracks {
       artist
       track
+      listenedAt
     }
 
     posts {
