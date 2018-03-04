@@ -10,7 +10,7 @@ const Header = ({ tracks: [mostRecentTrack, ...rest] }) => (
     </div>
     <div className="row">
       <div className="avatar small">
-        <img className="u-photo" src="/static/heidelberg-2017.png" alt="Jonathan Jenne's Avatar" />
+        <img className="u-photo" src="/assets/heidelberg-2017.png" alt="Jonathan Jenne's Avatar" />
       </div>
       <div className="about">
         <h1 className="p-name">Jonathan Jenne</h1>
