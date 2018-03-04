@@ -16,7 +16,13 @@ const postHandler = (req, res) => {
 app.prepare().then(() => {
   const server = express()
 
-  server.use('/assets', serveStatic(path.join(__dirname, 'assets')))
+  server.use(
+    '/assets',
+    serveStatic(path.join(__dirname, 'assets'), {
+      immutable: true,
+      maxAge: '7d'
+    })
+  )
   server.get('/note/:hashid', postHandler)
   server.get('/bookmark/:hashid', postHandler)
   server.get('/article/:hashid', postHandler)
