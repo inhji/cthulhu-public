@@ -24,6 +24,12 @@ class PostPage extends React.Component {
             />
           </div>
           <Post post={post} />
+          <div className="comments" />
+          <script
+            src="https://schnack.inhji.de/embed.js"
+            data-schnack-slug={post.hashid}
+            data-schnack-target=".comments"
+          />
         </div>
         <style jsx>{`
           .avatar {
