@@ -4,15 +4,10 @@ import Post from '../components/post'
 import query from '../queries/post'
 import { execQuery } from '../lib/graphql'
 
-const Comments = ({ hashid }) => (
+const Comments = () => (
   <div className="comment-wrapper">
     <h3>Kommentare</h3>
     <div className="comments" />
-    <script
-      src="https://schnack.inhji.de/embed.js"
-      data-schnack-slug={hashid}
-      data-schnack-target=".comments"
-    />
     <style jsx>{`
       .schnack-form {
         margin-top: 20px;
@@ -43,6 +38,16 @@ class PostPage extends React.Component {
   static async getInitialProps ({ query: { hashid } }) {
     const { postByHashid } = await execQuery(query, { hashid })
     return { post: postByHashid }
+  }
+
+  componentDidMount () {
+    if (process.browser) {
+      new Schnack({
+        target: '.comments',
+        slug: this.props.post.hashid,
+        host: 'https://schnack.inhji.de'
+      })
+    }
   }
 
   render () {

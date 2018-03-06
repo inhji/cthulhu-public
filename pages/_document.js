@@ -29,6 +29,8 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display"
             rel="stylesheet"
           />
+
+          <script src="https://schnack.inhji.de/client.js" />
         </Head>
         <body className="h-feed h-card">
           <Main />
