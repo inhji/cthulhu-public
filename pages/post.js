@@ -4,6 +4,41 @@ import Post from '../components/post'
 import query from '../queries/post'
 import { execQuery } from '../lib/graphql'
 
+const Comments = ({ hashid }) => (
+  <div className="comment-wrapper">
+    <h3>Kommentare</h3>
+    <div className="comments" />
+    <script
+      src="https://schnack.inhji.de/embed.js"
+      data-schnack-slug={hashid}
+      data-schnack-target=".comments"
+    />
+    <style jsx>{`
+      .schnack-form {
+        margin-top: 20px;
+      }
+
+      .schnack-body {
+        font-size: 100%;
+        width: 100%;
+      }
+
+      .schnack-comments {
+        margin: 0;
+        padding: 0;
+      }
+
+      .schnack-date a {
+        color: #828282;
+      }
+
+      .schnack-date {
+        float: right;
+      }
+    `}</style>
+  </div>
+)
+
 class PostPage extends React.Component {
   static async getInitialProps ({ query: { hashid } }) {
     const { postByHashid } = await execQuery(query, { hashid })
@@ -19,17 +54,12 @@ class PostPage extends React.Component {
           <div className="avatar">
             <img
               className="u-photo"
-              src="/static/heidelberg-2017.png"
+              src="/assets/heidelberg-2017.png"
               alt="Jonathan Jenne's Avatar"
             />
           </div>
           <Post post={post} />
-          <div className="comments" />
-          <script
-            src="https://schnack.inhji.de/embed.js"
-            data-schnack-slug={post.hashid}
-            data-schnack-target=".comments"
-          />
+          <Comments hashid={post.hashid} />
         </div>
         <style jsx>{`
           .avatar {
