@@ -41,13 +41,11 @@ class PostPage extends React.Component {
   }
 
   componentDidMount () {
-    if (process.browser) {
-      new Schnack({
-        target: '.comments',
-        slug: this.props.post.hashid,
-        host: 'https://schnack.inhji.de'
-      })
-    }
+    new Schnack({
+      target: '.comments',
+      slug: this.props.post.hashid,
+      host: 'https://schnack.inhji.de'
+    })
   }
 
   render () {
