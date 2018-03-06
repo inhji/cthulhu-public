@@ -4,36 +4,6 @@ import Post from '../components/post'
 import query from '../queries/post'
 import { execQuery } from '../lib/graphql'
 
-const Comments = () => (
-  <div className="comment-wrapper">
-    <h3>Kommentare</h3>
-    <div className="comments" />
-    <style jsx>{`
-      .schnack-form {
-        margin-top: 20px;
-      }
-
-      .schnack-body {
-        font-size: 100%;
-        width: 100%;
-      }
-
-      .schnack-comments {
-        margin: 0;
-        padding: 0;
-      }
-
-      .schnack-date a {
-        color: #828282;
-      }
-
-      .schnack-date {
-        float: right;
-      }
-    `}</style>
-  </div>
-)
-
 class PostPage extends React.Component {
   static async getInitialProps ({ query: { hashid } }) {
     const { postByHashid } = await execQuery(query, { hashid })
@@ -61,8 +31,13 @@ class PostPage extends React.Component {
               alt="Jonathan Jenne's Avatar"
             />
           </div>
+
           <Post post={post} />
-          <Comments hashid={post.hashid} />
+
+          <div className="comment-wrapper">
+            <h3>Kommentare</h3>
+            <div className="comments" />
+          </div>
         </div>
         <style jsx>{`
           .avatar {
