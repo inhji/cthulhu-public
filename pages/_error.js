@@ -13,11 +13,13 @@ export default class Error extends React.Component {
     return (
       <Layout>
         <div>
-          <h1>..the fuck?!</h1>
+          <h1>
+            ..the fuck?! <img src="/assets/emoji/1f602.png" style={{ width: '2rem' }} />
+          </h1>
         </div>
 
-        {statusCode === 404 && <p>Diese Seite gibt es garnicht 😅</p>}
-        {statusCode === 500 && <p>Alles ist kaputt! 😭</p>}
+        {statusCode === 404 && <p>Diese Seite gibt es garnicht..</p>}
+        {statusCode === 500 && <p>Alles ist kaputt!</p>}
       </Layout>
     )
   }
