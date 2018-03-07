@@ -8,11 +8,6 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
-const postHandler = (req, res) => {
-  console.log('postHandler for', req.url)
-  return app.render(req, res, '/post', { hashid: req.params.hashid })
-}
-
 app.prepare().then(() => {
   const server = express()
 
@@ -23,9 +18,10 @@ app.prepare().then(() => {
       maxAge: '7d'
     })
   )
-  server.get('/note/:hashid', postHandler)
-  server.get('/bookmark/:hashid', postHandler)
-  server.get('/article/:hashid', postHandler)
+
+  server.get('/post/:hashid', (req, res) => {
+    return app.render(req, res, '/post', { hashid: req.params.hashid })
+  })
 
   server.get('*', (req, res) => {
     return handle(req, res)
