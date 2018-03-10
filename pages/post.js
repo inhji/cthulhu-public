@@ -34,14 +34,6 @@ class PostPage extends React.Component {
     return (
       <Layout title="Post">
         <div className="h-entry">
-          <div className="avatar">
-            <img
-              className="u-photo"
-              src="/assets/heidelberg-2017.png"
-              alt="Jonathan Jenne's Avatar"
-            />
-          </div>
-
           <Post post={post} />
 
           <div className="comment-wrapper">
@@ -49,16 +41,6 @@ class PostPage extends React.Component {
             <div className="comments" />
           </div>
         </div>
-        <style jsx>{`
-          .avatar {
-            float: left;
-          }
-          .avatar img {
-            border-radius: 5px;
-            width: 75px;
-            margin-right: 20px;
-          }
-        `}</style>
       </Layout>
     )
   }
