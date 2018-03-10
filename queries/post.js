@@ -3,7 +3,7 @@ const query = /* GraphQL */ `
     postByHashid(hashid: $hashid) {
       ... on Note {
         hashid
-        content
+        contentHtml
         type
         tags
         createdAt
@@ -15,7 +15,7 @@ const query = /* GraphQL */ `
       ... on Article {
         hashid
         title
-        content
+        contentHtml
         createdAt
         author {
           id
@@ -25,7 +25,7 @@ const query = /* GraphQL */ `
       ... on Bookmark {
         hashid
         title
-        content
+        contentHtml
         url
         tags
         type

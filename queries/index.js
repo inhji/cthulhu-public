@@ -9,7 +9,7 @@ export default /* GraphQL */ `
     posts {
       ... on Note {
         id
-        content
+        contentHtml
         hashid
         tags
         type
@@ -23,7 +23,7 @@ export default /* GraphQL */ `
         id
         url
         title
-        content
+        contentHtml
         hashid
         tags
         type
