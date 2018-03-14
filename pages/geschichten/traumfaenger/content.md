@@ -1,4 +1,4 @@
-![Traumfänger von Andreas Wagner](/assets/post-images/traumfaenger.jpg)
+![Bild von Andreas Wagner](/assets/post-images/traumfaenger.jpg)
 
 # Traumfänger
 
@@ -36,4 +36,4 @@ Sie erhebt sich und verlässt mein Haus, ohne mich eines weiteren Blickes zu wü
 
 Nach ein paar Stunden hat der Regen aufgehört und der Mond wirft etwas Licht durch mein Fenster auf den Platz an dem sie saß. Ich habe ein paar jämmerliche Tränen geweint und den kalten Tee heruntergekippt, nur um etwas zu tun. Um nicht daran denken zu müssen, dass sie fort ist und nicht wieder kommen wird. Dass sie nur in meinem Kopf existierte, macht die Situation nur hoffnungsloser.
 
-<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@waguluz_?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Andreas Wagner"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Andreas Wagner</span></a>
+[Bild von Andreas Wagner](https://unsplash.com/@waguluz_)
