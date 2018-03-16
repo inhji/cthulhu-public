@@ -15,6 +15,11 @@ const Nav = () => (
           <a>Geschichten</a>
         </Link>
       </li>
+      <li>
+        <Link href="/gedichte">
+          <a>Gedichte</a>
+        </Link>
+      </li>
     </ul>
     <div className="clear" />
 
