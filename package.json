@@ -41,7 +41,7 @@
     "markdown-it-checkbox": "^1.1.0",
     "markdown-it-emoji": "^1.4.0",
     "micropub-express": "^0.7.1",
-    "mongoose": "^5.0.10",
+    "mongoose": "^5.0.11",
     "mongoose-plugin-autoinc": "^1.1.9",
     "morgan": "^1.9.0",
     "next": "^5.0.1-canary.15",
