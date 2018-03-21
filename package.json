@@ -44,7 +44,7 @@
     "mongoose": "^5.0.10",
     "mongoose-plugin-autoinc": "^1.1.9",
     "morgan": "^1.9.0",
-    "next": "^5.0.1-canary.15",
+    "next": "^5.0.1-canary.16",
     "node-fetch": "^2.1.1",
     "node-sass": "^4.7.2",
     "react": "^16.2.0",
