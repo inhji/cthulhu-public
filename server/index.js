@@ -54,6 +54,10 @@ export const start = async () => {
 
   server.use('/api', apiRouter)
 
+  server.get('/geschichten', (req, res) => {
+    res.redirect('https://blog.inhji.de')
+  })
+
   server.get('/post/:hashid', (req, res) => {
     return app.render(req, res, '/post', { hashid: req.params.hashid })
   })

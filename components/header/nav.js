@@ -11,13 +11,8 @@ const Nav = () => (
         </Link>
       </li>
       <li>
-        <Link href="/geschichten">
-          <a>Geschichten</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/gedichte">
-          <a>Gedichte</a>
+        <Link href="https://blog.inhji.de">
+          <a>Blog</a>
         </Link>
       </li>
     </ul>
