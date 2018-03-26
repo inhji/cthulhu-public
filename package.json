@@ -19,7 +19,7 @@
     "express": "^4.16.2",
     "graphql-request": "^1.5.1",
     "next": "^5.0.1-canary.14",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.8.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
