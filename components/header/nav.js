@@ -1,36 +1,30 @@
 import Link from 'next/link'
 
 const Nav = () => (
-  <nav>
-    <ul className="site-nav">
-      <li>
+  <nav className="navbar is-dark">
+    <div className="container">
+      <div className="navbar-brand">
         <Link href="/">
-          <a className="u-url u-uid">
-            <strong>Inhji.de</strong>
+          <a className="navbar-item">
+            <img src="/assets/faviconv2-inverse.png" />
           </a>
         </Link>
-      </li>
-      <li>
-        <Link href="/geschichten">
-          <a>Geschichten</a>
-        </Link>
-      </li>
-    </ul>
-    <div className="clear" />
 
-    <style jsx>{`
-      ul {
-        list-style-type: none;
-        margin-left: 0;
-        padding-left: 0;
-        height: 30px;
-      }
+        <div className="navbar-burger">
+          <span />
+          <span />
+          <span />
+        </div>
+      </div>
 
-      li {
-        float: left;
-        margin-right: 10px;
-      }
-    `}</style>
+      <div className="navbar-menu">
+        <div className="navbar-start">
+          <Link href="https://blog.inhji.de">
+            <a className="navbar-item">Blog</a>
+          </Link>
+        </div>
+      </div>
+    </div>
   </nav>
 )
 

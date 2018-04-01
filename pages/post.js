@@ -37,7 +37,6 @@ class PostPage extends React.Component {
           <Post post={post} />
 
           <div className="comment-wrapper">
-            <h3>Kommentare</h3>
             <div className="comments" />
           </div>
         </div>

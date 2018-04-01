@@ -13,5 +13,10 @@ export default ({ post: { contentHtml, hashid, tags, createdAt, type, title, url
       <Tags tags={tags} />
       <Author />
     </p>
+    <style jsx>{`
+      article.post {
+        margin-bottom: 5rem;
+      }
+    `}</style>
   </article>
 )

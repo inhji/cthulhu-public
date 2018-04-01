@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Header from './header'
 import Nav from './header/nav'
 import Footer from './footer'
+import Sidebar from './sidebar'
 import '../styles/style.scss'
 
 function pageTitle (title) {
@@ -9,31 +9,29 @@ function pageTitle (title) {
   return [title, siteTitle].join(' - ')
 }
 
-export default ({ children, title = 'Home', tracks = [] }) => (
+export default ({ children, title = 'Home' }) => (
   <div>
     <Head>
       <title>{pageTitle(title)}</title>
     </Head>
 
     <div className="wrapper">
-      {tracks.length > 0 ? (
-        <div>
-          <Header tracks={tracks} />
+      <Nav />
+
+      <div className="section">
+        <div className="container">
+          <div className="columns">
+            <main id="content" className="column is-four-fifths">
+              {children}
+            </main>
+
+            <div className="column is-one-fifth">
+              <Sidebar />
+            </div>
+          </div>
         </div>
-      ) : (
-        <Nav />
-      )}
-    </div>
+      </div>
 
-    <div className="line" />
-
-    <main id="site-content">
-      <div className="wrapper">{children}</div>
-    </main>
-
-    <div className="line" />
-
-    <div className="wrapper">
       <Footer />
     </div>
   </div>

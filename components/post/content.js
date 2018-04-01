@@ -4,11 +4,11 @@
  */
 export default ({ type, content }) =>
   type === 'Note' ? (
-    <p className="e-content p-name">
+    <p className="e-content p-name content">
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </p>
   ) : (
-    <p className="e-content">
+    <p className="e-content content">
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </p>
   )
