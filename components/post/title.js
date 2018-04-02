@@ -7,13 +7,13 @@ import Link from 'next/link'
  */
 const Title = ({ title, url }) =>
   url ? (
-    <h2 className="p-name">
+    <h2 className="p-name is-size-4 title">
       <Link href={url}>
         <a className="u-bookmark-of h-cite">{title}</a>
       </Link>
     </h2>
   ) : title ? (
-    <h2 className="p-name">{title}</h2>
+    <h2 className="p-name is-size-4 title">{title}</h2>
   ) : null
 
 export default Title
