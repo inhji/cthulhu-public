@@ -5,7 +5,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 export default () => (
   <aside id="sidebar">
     <div className="avatar-wrapper">
-      <img src="/assets/heidelberg-2017.png" class="avatar" />
+      <img src="/assets/heidelberg-2017.png" className="avatar" />
       <span>dat bin ich</span>
     </div>
 
