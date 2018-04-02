@@ -1,5 +1,10 @@
 module.exports = {
   extends: 'standard',
+  parser: 'babel-eslint',
+  ecmaFeatures: {
+    classes: true,
+    jsx: true
+  },
   plugins: ['react'],
   rules: {
     'react/jsx-uses-react': 'error',
