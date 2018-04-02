@@ -8,9 +8,9 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
 const Index = ({ posts, tracks: [mostRecentTrack, ...rest] }) => (
   <Layout>
-    <section className="hero is-dark is-bold">
+    <section className="hero is-primary is-bold">
       <div className="hero-body">
-        <h1 className="title">Johnnie in the Dark</h1>
+        <h1 className="title">Johnnie Darko</h1>
         <div className="subtitle">
           "I think perfection is ugly. Somewhere in the things humans make, i want to see scars,
           failure, disorder, distortion." - Yohji Yamamoto
