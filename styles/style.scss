@@ -11,38 +11,7 @@ $primary: #dd3344;
 
 @import '../node_modules/bulma/bulma';
 
-@import './_fontawesome';
-@import './_highlight';
+@import './fontawesome';
+@import './highlight';
 @import './schnack';
-
-// Global
-
-body {
-  overflow-y: scroll;
-}
-
-::selection {
-  background: #fff2a8;
-}
-
-::-moz-selection {
-  background: #fff2a8;
-}
-
-// Content
-
-#content {
-  img:not(.emoji) {
-    width: 100%;
-  }
-
-  .emoji {
-    height: 1.3rem;
-  }
-}
-
-// Helpers
-
-.clear {
-  clear: both;
-}
+@import './custom';
