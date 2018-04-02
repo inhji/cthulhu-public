@@ -10,6 +10,7 @@ export default () => (
             <a rel="author">Jonathan Jenne</a>
           </Link>
         </p>
+        <p>Live slow, die old.</p>
       </div>
     </div>
   </footer>
